@@ -11,12 +11,6 @@ app.get("/user",(req,res)=>{
 
 });
 
-app.post("/user",(req,res)=>{
-    console.log("Data is sending to DB");
-    res.send("Data is Successfully SAVED TO DB");
-
-});
-
 app.listen(3000, ()=>{
     console.log("Server is Successfully Listening on Port 3000");
 });
