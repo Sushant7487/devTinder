@@ -2,8 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.use("/test",(req,res,next)=>{
-    next();
+app.use("/test",(req,res)=>{
     res.send("Test Route 1");
 },(req,res)=>{
     res.send("Test Route 2");
